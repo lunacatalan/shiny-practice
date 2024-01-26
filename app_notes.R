@@ -4,7 +4,7 @@
 
 
 # ----------------------------------------------------------------------------------------------------
-#                       Step 1: Create app folder
+#                       Step 1: Create app folder ----
 # ----------------------------------------------------------------------------------------------------
 #   
 #   For inside the SINGLE APP folder: create folder `app.R`
@@ -13,7 +13,7 @@
 #
 #
 # ----------------------------------------------------------------------------------------------------
-#                       Step 2: Write single-file app
+#                       Step 2: Write single-file app ----
 # ----------------------------------------------------------------------------------------------------
 #       
 #       Goals:
@@ -29,7 +29,7 @@
 # - look up shiny widgets on google
 #
 # ----------------------------------------------------------------------------------------------------
-#                       Ste 3: Creating Reactive outputs
+#                       Ste 3: Creating Reactive outputs ----
 # ----------------------------------------------------------------------------------------------------
 #
 # In UI...
@@ -48,7 +48,7 @@
 # - inputs are what you want the user to interact with
 # - outputs are what the user sees
 #
-#   Rules
+#   Rules 
 #     1. Save objects you want to display to output$<id>
 
 #     2. Build reactive objects using a render*() function 
@@ -60,6 +60,21 @@
 #     3. Access input values with input$<id>
 
 #         - in server we gave instructions using reactive() and renderPlot()
+
+
+# ----------------------------------------------------------------------------------------------------
+#                       Step 4: Write two-file app ----
+# ----------------------------------------------------------------------------------------------------
+#
+#   global.R rile for organization
+#     - loading packages; importing ddata; sourcing scripts; building ggplot themes
+#     - MUST BE saved to the same directory/folder as server.R and ui.R files
+#
+#
+#   Layout functions 
+#     - start with CONTAINER function; then add nested things
+#     - sidebar, nav bar, panels
+#
 #
 # ----------------------------------------------------------------------------------------------------
 #                       
