@@ -3,6 +3,17 @@ server <- function(input, output) {
   
   # filter trout data ----
   trout_filtered_df <- reactive({
+    
+    # gentle error messages with conditions ----
+    validate(
+      need(length(input$channel_type_input) > 0, # whats being selected by the user
+           "Please select at least 1 channel type to visualize data for!"), # if it is 0 or less
+      
+      need(length(input$section_input) > 0, 
+           "Please select at least 1 section (clear cut forest for old growth forest)")
+    )
+    
+    
     clean_trout %>%  
       filter(channel_type %in% c(input$channel_type_input)) %>% # for user input
       filter(section %in% c(input$section_input))
