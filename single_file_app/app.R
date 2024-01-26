@@ -75,7 +75,7 @@ server <- function(input, output) {
     
   }) 
   
-  # render dt for selecting years 
+  # render dt for selecting years; can also separate filtering steps and use reactive()
   output$dt_year_output <- renderDataTable({
     
     DT::datatable(penguins %>% 
