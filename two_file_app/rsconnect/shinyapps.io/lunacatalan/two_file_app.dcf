@@ -1,0 +1,10 @@
+name: two_file_app
+title:
+username: lunacatalan
+account: lunacatalan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11046673
+bundleId: 8188451
+url: https://lunacatalan.shinyapps.io/two_file_app/
+version: 1

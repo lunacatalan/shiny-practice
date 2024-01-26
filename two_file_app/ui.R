@@ -9,7 +9,16 @@ ui <- navbarPage(
     
     title = "About this page", # title of the panel
     
-    "background information goes here !!!" # this is the text on this panel
+    # intro text fluid row ----
+    fluidRow( # can sepcify columns within this
+      
+      column(1),
+      column(10, # there are 12 columns, so this will take up almost the whole page
+             includeMarkdown("text/landing_page.md")),
+      column(1)
+      
+      
+    ) # END intro text fluidRow ----
     
     
   ), # END (Page1) intro tabPanel

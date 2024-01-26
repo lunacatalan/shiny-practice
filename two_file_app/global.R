@@ -4,6 +4,7 @@ library(tidyverse)
 library(palmerpenguins)
 library(lterdatasampler)
 library(shinyWidgets)
+library(markdown) # deploy the markdown function for landing page
 
 #.......................wrangle trout data.......................
 clean_trout <- and_vertebrates |>
