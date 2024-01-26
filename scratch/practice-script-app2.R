@@ -50,10 +50,7 @@ ggplot(trout_filtered_df, aes(x = length_mm, y = weight_g, color = channel_type,
   labs(x = "Trout Length (mm)", y = "Trout Weight (g)", color = "Channel Type", shape = "Channel Type") +
   myCustomTheme() # add custom theme
 
-
-#..................practice filtering for island.................
-island_df <- penguins %>%
-  filter(island %in% c("Dream", "Torgesen"))
+penguins
 
 #........................plot penguin data.......................
 ggplot(na.omit(island_df), aes(x = flipper_length_mm, fill = species)) +
@@ -62,3 +59,7 @@ ggplot(na.omit(island_df), aes(x = flipper_length_mm, fill = species)) +
   labs(x = "Flipper length (mm)", y = "Frequency",
        fill = "Penguin species") +
   myCustomTheme()
+
+
+
+

@@ -35,3 +35,7 @@ myCustomTheme <- function() {
           panel.border = element_rect(linewidth = 0.7))
 }
 
+
+#........................plot penguin data.......................
+penguins
+
