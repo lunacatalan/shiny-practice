@@ -35,3 +35,9 @@ Step 6: add inputs and output IDs to `ui.R`
 
 Step 7: Use ID's to `server.R`
 - add output$output_IDs with defined code
+
+Step 8: add `text` folder in `shinydashboard` and add long text there
+- include `markdown` to load `.md` files 
+
+Step 9: add `www` folder to store any images and things like that 
+- provide filepath (note: begins inside www so only need to start filepath there)

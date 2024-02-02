@@ -46,7 +46,16 @@ body <- dashboardBody(
                    # background info box ----
                    box(width = NULL,
                        
-                       "background info here"
+                       title = tagList(icon("water"), 
+                                       strong("Monitoring Fish Creek Watershed")),
+                       includeMarkdown("text/intro.md"), # add text 
+                       tags$img(src = "FishCreekWatershedSiteMap_2020.jpg", # filepath to image
+                                alt = "Map of Northern AK, showing Fish Creen Watershed, located within the North.",
+                                style = "max-width: 100%;"), # scale size to 100% of size within contain 
+                       tags$h6(tags$em("Map Source:", 
+                                       tags$a(href = "http://www.fishcreekwatershed.org/", # hyperlink
+                                              "FCWO")),
+                               style = "text-align: center;") # centers the map source text
                        
                        ) # END background box
                    
@@ -61,7 +70,8 @@ body <- dashboardBody(
                      # citation box ----
                      box(width = NULL,
                          
-                         "citations go here"
+                         title = tagList(strong("Citations")),
+                         includeMarkdown("text/citation.md")
                          
                      ) # END citation box
                      
@@ -73,7 +83,9 @@ body <- dashboardBody(
                      # disclaimer box ----
                      box(width = NULL,
                          
-                         "dcussion goes here"
+                         title = tagList(icon("warning"),
+                                         strong("Disclaimer")), 
+                         includeMarkdown("text/disclaimer.md")
                          
                      ) # END disclaimer box
                      
