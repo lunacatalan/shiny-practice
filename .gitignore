@@ -4,3 +4,4 @@
 .Ruserdata
 .DS_Store
 raw_data/
+*.sass_cache_keys

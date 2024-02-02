@@ -6,6 +6,14 @@ library(lterdatasampler)
 library(shinyWidgets)
 library(markdown) # deploy the markdown function for landing page
 library(shinycssloaders)
+library(sass)
+
+# compile CSS ----
+sass(
+  input = sass_file("www/sass-styles.scss"),
+  output = "www/sass-styles.css", # output to .css file
+  options = sass_options(output_style = "compressed") # remove white space around rules
+)
 
 #.......................wrangle trout data.......................
 clean_trout <- and_vertebrates |>

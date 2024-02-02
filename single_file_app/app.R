@@ -4,9 +4,25 @@ library(palmerpenguins)
 library(tidyverse)
 library(DT)
 
+# to customize
+library(bslib)
+
 # define user interface ---
 
+# will tell background theme to match the theme specified
+thematic::thematic_shiny()
+
 ui <- fluidPage( # establish page for ui / create foundation for page
+  
+  
+  
+  theme = bs_theme(
+    
+    bg = "orange",
+    fg = "#FDF7f7",
+    primary = "maroon",
+    base_font = font_google("Pacifico")
+  ),
   
   # add an app title ----
   tags$h1("Palmer Penguins App"), # apply level 1 header
