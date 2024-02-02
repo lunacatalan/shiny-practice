@@ -1,6 +1,11 @@
-# shiny-practice
-Practicing making shiny apps
-Using the `shiny` library
+# Practice with Shiny Apps
+Practicing making shiny apps using the `shiny` library. Shiny is reactive, which means there is a web server and within the shiny framework and makes it hard to debug. Approaches to take:
+
+- Reducing app to just problematic code 
+
+- Adding diagnostic messages to reactive plots 
+
+- To practice 
 
 # Creating a Dashboard 
 
@@ -142,7 +147,14 @@ header = tags$head(
     tags$link(rel = "stylesheet", type = "text/css", href = "sass-styles.css")
     
   )
-
 ```
 
 - When updating the theme, make changes to the `.scss` file and it will automatically update the `.css` file
+
+# Functions 
+
+This will be practiced inside `functions-app`. Create a folder `R` inside apps directory, because shiny will automatically source the files in there into the app. 
+
+- within this folder, create function files
+
+- update the `ui.R` and `server.R` when applicable with the functions you've created

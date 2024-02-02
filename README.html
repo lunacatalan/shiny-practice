@@ -501,14 +501,29 @@ a <strong>;</strong></p>
 <li>use <code>sass()</code> to use the input .scss file and convert it
 to .css file</li>
 </ul>
-<p>In <code>ui.R</code> file: create header to read in the .css file</p>
+<p>In <code>ui.R</code> file: create header to read in the .css file
+since the computer doesnt know how to read the .scss</p>
 <pre><code>header = tags$head(
     
     tags$link(rel = &quot;stylesheet&quot;, type = &quot;text/css&quot;, href = &quot;sass-styles.css&quot;)
     
-  )
-</code></pre>
+  )</code></pre>
+<ul>
+<li>When updating the theme, make changes to the <code>.scss</code> file
+and it will automatically update the <code>.css</code> file</li>
+</ul>
 </div>
+</div>
+<div id="functions" class="section level1">
+<h1>Functions</h1>
+<p>This will be practiced inside <code>functions-app</code>. Create a
+folder <code>R</code> inside apps directory, because shiny will
+automatically source the files in there into the app.</p>
+<ul>
+<li><p>within this folder, create function files</p></li>
+<li><p>update the <code>ui.R</code> and <code>server.R</code> when
+applicable with the functions you’ve created</p></li>
+</ul>
 </div>
 
 
