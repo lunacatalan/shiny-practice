@@ -36,7 +36,9 @@ server <- function(input, output) {
       labs(x = "Trout Length (mm)", y = "Trout Weight (g)", color = "Channel Type", shape = "Channel Type") +
       myCustomTheme() # add custom theme
     
-  })
+  },
+  
+  alt = "this is alt text but its not awesome")
   
   # filter penguin data 
   island_df <- reactive({
