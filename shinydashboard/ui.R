@@ -34,6 +34,9 @@ sidebar <- dashboardSidebar(
 # dashboard body ------------------------------
 body <- dashboardBody(
   
+  # set geolocation
+  
+  
   # set theme ----
   fresh::use_theme("dashboard-fresh-theme.css"),
   
